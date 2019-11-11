@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content=IE=edge">
+	<title>My WebApp</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+</head>
+
+<body onload="onLoaded();">
+	<div id="head">
+		<h3>My WebApp</h3>
+		<div id="menu">
+			<a href="/">home</a>
+			<a href="/users">users</a>
+			<a href="/books">books</a>
+		</div>
+	</div>
+	<div id="main">
+		<div class="item">
+			<h3>Bicycles:</h3>
+			Price: $
+			<!-- span 태그의 값을 js의 onLoaded() 안에 있는 biprice값으로 변경-->
+			<!-- document.getElementById("biprice").innerHTML -->
+			<span id="biprice"></span>
+
+			<br/> Quantity:
+			<span id="biquantity"></span>
+		</div>
+		<div class="item">
+                        <h3>Books:</h3>
+                        Price: $
+                        <span id="bprice"></span>
+                        <br/> Quantity:
+                        <span id="bquantity"></span>
+                </div>
+		<div class="item">
+                        <h3>RC Cars:</h3>
+                        Price: $
+                        <span id="rccprice"></span>
+                        <br/> Quantity:
+                        <span id="rccquantity"></span>
+                </div>
+	</div>
+
+
+	<!-- index.html과 같은 디렉토리에 있는 파일들을 불러옴-->
+	<!-- for Chart.js-->
+	<canvas id="myChart"></canvas>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+	<script src="js/main.js"></script>
+
+
+</body>
+
+</html>
